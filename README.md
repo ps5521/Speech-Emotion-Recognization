@@ -1,54 +1,61 @@
-Speech Emotion Recognition (SER)
-Overview
-This project aims to classify emotions from speech signals using advanced machine learning techniques. It leverages features like Mel Frequency Cepstral Coefficients (MFCCs) and Chroma features to detect emotions such as happiness, sadness, anger, and surprise.
+# 🎙️ Speech Emotion Recognition (SER)
 
-Features
-Emotion classification using deep learning models (e.g., CNN, LSTM, or hybrid models).
+![License](https://img.shields.io/badge/license-MIT-green) ![Issues](https://img.shields.io/github/issues/ps5521/speech-emotion-recognition) ![Stars](https://img.shields.io/github/stars/ps5521/speech-emotion-recognition) ![Forks](https://img.shields.io/github/forks/ps5521/speech-emotion-recognition)
 
-Audio feature extraction for better accuracy.
+Speech Emotion Recognition (SER) is a project aimed at identifying and classifying human emotions from speech signals. This technology has applications in human-computer interaction, call centers, mental health monitoring, and more.
 
-Support for multiple datasets (e.g., RAVDESS, EMO-DB).
+---
 
-Requirements
-Python 3.8 or higher
+## 🌟 Features
 
-Libraries: TensorFlow/Keras, scikit-learn, librosa, matplotlib, numpy, pandas
+- 🎵 **Audio Preprocessing**: Noise removal, normalization, and feature extraction.
+- 🤖 **Machine Learning Models**: Leverages cutting-edge models for emotion classification.
+- 📊 **Real-time Emotion Detection**: Supports live audio input for real-time recognition.
+- 🗂️ **Dataset Support**: Compatible with popular datasets like RAVDESS, CREMA-D, and more.
+- 🛠️ **Highly Configurable**: Easy to tweak for various applications and datasets.
 
-Installation
-Clone the repository:
+---
 
-bash
-git clone https://github.com/your-repo/speech-emotion-recognition.git
-Install dependencies:
+## 📂 Directory Structure
 
-bash
-pip install -r requirements.txt
-Usage
-Preprocess the audio data:
+```bash
+speech-emotion-recognition/
+├── data/               # Datasets and preprocessed files
+├── models/             # Pre-trained and custom models
+├── notebooks/          # Jupyter Notebooks for experiments
+├── src/                # Core source code
+├── tests/              # Unit and integration tests
+└── README.md           # Project documentation
+```
 
-bash
-python preprocess.py
-Train the model:
+---
 
-bash
-python train.py
-Predict emotions:
+## 🚀 Getting Started
 
-bash
-python predict.py --audio_file path/to/audio.wav
-Datasets
-RAVDESS: English dataset with 8 emotions.
+### Prerequisites
 
-EMO-DB: German dataset with 7 emotions.
+- Python 3.8+
+- Required packages: `numpy`, `scipy`, `librosa`, `sklearn`, `tensorflow` (or `pytorch`)
 
-SAVEE: English dataset with 7 emotions.
+### Installation
 
-Results
-The model achieves an accuracy of approximately 80% on the test set, demonstrating its effectiveness in emotion recognition.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ps5521/speech-emotion-recognition.git
+   cd speech-emotion-recognition
+   ```
 
-Future Work
-Improve accuracy with hybrid models.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Explore additional datasets for better generalization.
+3. Download a dataset (e.g., RAVDESS) and place it in the `data/` directory.
 
-Implement real-time emotion recognition.
+---
+
+## 📈 Usage
+
+### Training the Model
+
+Run the following command to train the
